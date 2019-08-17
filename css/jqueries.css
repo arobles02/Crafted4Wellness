@@ -1,0 +1,356 @@
+@media only screen and (max-width:1400px){
+    .section-about {
+        height: auto;
+    }
+    
+}
+
+/* Big tablets to 1200px (widths smaller than the 1140px row) */
+@media only screen and (max-width:1200px){
+    .slogan-text-box{
+    width: 100%;
+    padding: 0 2%;
+}
+    .row{padding: 0 2%;}
+    .section-services{   
+    height: 65vh;
+    width: auto;
+    padding: 70px;
+    font-size: 80%;
+    margin-bottom: 60px;}
+    
+    .section-services p{font-size: 90%}
+    .section-services .box{
+        margin-right: 0px;
+    }
+ 
+    
+.big-icon,
+.big-icon-mnt,
+.big-icon-mnt2{
+    font-size: 350%;
+}
+    
+    .big-icon-mnt{
+        margin-left: 25%;
+    }
+    
+    h1{
+        margin-left: 20px;
+        font-size: 190%;
+    }
+    
+    .btn-full{
+        margin-left: 20px;
+    }
+    
+    .logo{
+        margin-left: 20px;
+    }
+    
+    .section-about p{
+        font-size;
+    }
+    
+    .section-about{
+        height: 110vh;
+    }
+    
+    .about-box:last-child{
+    margin-top: 20px;
+    font-size: 100%;
+    padding:2%;
+}
+    
+    .about-box .about-logo{
+        height: 350px;
+        margin-top: 50px;
+    }
+
+    .section-clients{height: 520px;}
+    
+    .contact-form{width: 90%;}
+
+    
+
+/* Small tablet to big tablet: from 768 to 1023px */
+@media only screen and (max-width:1023px){
+    
+    body{font-size:18px;}
+    
+    section{padding: 60px 0;}
+    .logo{height: 90px;}
+    
+   .main-nav,
+    .sticky{font-size: 90%;}
+    
+    .icon-small{
+        width: 17px;
+        margin-right:10px;
+    }
+    .contact-form{width: 80%}
+    header{height: 100vh;}
+
+    .section-about{height: 100vh;}
+    .about-box .about-logo{
+    width: 55%;
+    margin-top: 33px;
+}
+
+ .section-clients{height: 470px;}
+      .contact-form{width: 90%;}
+    
+
+/* Small phones to small tablets: from 481 to 767px */
+    
+@media only screen and (max-width:767px){
+    body{font-size: 16px;}
+    section{padding: 30px 0;}
+    .row,
+    .slogan-text-box{padding: 0 4%;}
+    .col{
+            width: 100%;
+            margin: 0 0 4% 0;
+    }
+    
+ .section-services{
+    height: auto;
+    width: 100%;
+    padding: 70px 0 50px 0;
+    font-size: 120%;
+     margin-bottom: -10px;
+}
+    .big-icon-mnt{
+    margin-left: 35%;
+}   
+    .main-nav{display: none;}
+    
+    .sticky{background-color: rgba(255, 255, 255, 0.98);}
+
+    .main-nav{display:none;}
+    
+    .mobile-nav-icon{display: inline-block;}
+    
+    .main-nav{float: left;
+        margin-top: 35px;
+       
+           /*Revisar esta parte*/
+    }
+    
+   
+    
+    .main-nav li{display:block; } /*Mostrar menu (elementos li) uno abajo del otro*/
+    
+    
+    .main-nav li a:link,
+    .main-nav li a:visited{
+        display: block;
+        border: 0;
+        padding: 8px 0;
+        font-size: 90%;
+    }
+   
+    .sticky .main-nav{ margin-top: 10px;
+        float: right;
+        margin-right: ;
+          }
+    
+    .main-nav{ margin-top: 30px;
+        float: right;
+        margin-right: 25px;
+        margin-left: -1000px;
+          }
+    
+    .main-nav li a:link,
+    .main-nav li a:visited{padding: 5px 0;}
+
+
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited{padding: 5px 0;}
+    .sticky .mobile-nav-icon{margin-top: 10px;}
+    .sticky .mobile-nav-icon i {color: #555;}
+    
+  
+    
+    
+    h1 {font-size: 180%;}
+    h2{font-size: 150%;}
+    
+    .section-about h2{
+        margin-top: 3px;
+    }
+    
+.about-box .about-logo{
+    width: 35%;
+    margin-top: 5px;
+   }
+    
+    .section-about{height: auto;}
+    .section-about p {
+        font-size: 130%;  
+      line-height: 105%;
+        margin-left: 10px;
+    }
+ .contact-form{width: 90%;}
+
+    
+.section-gallery{height: auto;}
+    
+    .section-clients{
+        height: auto;
+       
+    }
+    
+.clients-icons li{
+    display: block;
+    float: left;       /*alinear a la izquierda los elemntos para que queden en una linea horizontal y no uno arriba de otro*/
+    width: 12.5%;
+    padding: 0;
+    margin: 0;
+}
+   
+   
+  .section-clients img{
+    width: 100%;
+}
+    
+  
+footer{padding:20px;}  
+.footer-nav li,
+.social-links li{
+    margin-right: 10px;
+}
+
+    .social-links,
+    p{
+        float:left;
+    }
+    
+    footer p{
+        margin-top: -2px;
+    }
+   
+
+    
+    
+    
+/* Small phones: form 0 to 480px */
+@media only screen and (max-width:480px){
+    
+    header{ -moz-background-position: center;
+        -webkit-background-position:center;
+         background-position: -200px 0;}
+    
+    body{font-size: 16px;}
+    section{padding: 30px 0;}
+    .row,
+    .slogan-text-box{padding: 0 4%;}
+    .col{
+            width: 100%;
+            margin: 0 0 4% 0;
+    }
+    
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited{
+        padding: 5px 0;
+        margin: 0;
+    
+    }
+    
+  .main-nav li a:link,
+  .main-nav li a:visited{
+        padding: 5px 0;
+      margin-left: -10px;
+    }
+    
+    .sticky .main-nav{ margin-top:10px;}
+    
+    
+    
+    .logo-sticky{
+        height: 50px;
+        margin: 10px 0px;
+}
+    
+       .logo{
+        height: 60px;
+}
+    
+   
+    section{padding:25px 0;}
+    .contact-form{width: 100%;
+    }
+    
+    .section-about{ background-position: 0 0;}
+    
+    .about-box .about-logo {
+        height: 250px;
+        margin-bottom: 10px;
+        margin-top: 70px;
+    }
+   
+    .section-about h2{
+        margin-bottom: -900px;
+    }
+    
+     .section-about img{
+        margin-bottom: -50px;
+    }
+    
+    h1{
+        font-size: 100%;
+        margin-bottom: 40px;
+  
+    }
+    
+    .section-services .box{height:  280px;}
+
+    
+    .btn-full{
+        margin:30px 0 0 10px;
+    }
+    
+    .big-icon-mnt{
+    margin-left: 25%;
+}
+    
+    .section-about p{
+        font-size: 95%;
+    }
+    
+    .clients-icons li{
+    display: block;
+    float: left;       /*alinear a la izquierda los elemntos para que queden en una linea horizontal y no uno arriba de otro*/
+    width: 25%;
+    padding: 0;
+    margin: 0;
+}
+    
+    
+      .clients-icons li img{
+    padding: 0;
+    margin: 0;
+}
+    
+
+    
+    .slidesjs-pagination li {
+	font-size:90%;
+}
+    
+   
+.slidesjs-pagination li a {
+
+	padding: 10.5px 6px ;
+
+}
+    
+   .slidesjs-navigation li {
+	font-size:90%;
+}
+    
+    .slidesjs-navigation li a{
+		padding: 10.5px 6px ;
+}
+   
+    }
