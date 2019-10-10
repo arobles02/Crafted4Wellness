@@ -1,108 +1,349 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="en">
     <head>
-        <link rel="stylesheet" type="text/css" href="Vendors/css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="Vendors/css/grid.css">
-        <link rel="stylesheet" type="text/css" href="Vendors/css/ionicons.min.css">
-        <link rel="stylesheet" type="text/css" href="Resources/css/abstyle.css">
-        <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
-        <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js" ></script>
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+        <!-- title -->
         <title>Crafted 4 Wellness</title>
-        <link rel="icon" type="image/jpg" href="Resources/img/well.png" />
+        <!-- description -->
+        <meta name="description" content="We are a company dedicated to deliver top quality products to improve our customers Life. ">
+        <!-- keywords -->
+        
+        <meta charset="utf-8">
+        <meta name="author" content="Thinkers in Motion + @guiberraMX">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+        <!-- favicon -->
+        <link rel="shortcut icon" href="images/favicon.png">
+        <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+        <!-- animation -->
+        <link rel="stylesheet" href="css/animate.css" />
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <!-- et line icon --> 
+        <link rel="stylesheet" href="css/et-line-icons.css" />
+        <!-- font-awesome icon -->
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <!-- owl carousel -->
+        <link rel="stylesheet" href="css/owl.transitions.css" />
+        <link rel="stylesheet" href="css/owl.carousel.css" />
+        <!-- magnific popup -->
+        <link rel="stylesheet" href="css/magnific-popup.css" />
+        <!-- style -->
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- responsive css -->
+        <link rel="stylesheet" href="css/responsive.css" />
+        <!--[if IE]>
+            <script src="js/html5shiv.js"></script>
+        <![endif]-->
+
     </head>
     <body>
-        <header>
-            <nav>
-                <div class="row">    
-                    <ul>
-                        <a href="index.html"><img src="Resources/img/well.png" alt="4wellnes logo" class="logo"></a>
-                        <li><p>Crafted4Wellness</p></li>
-                        <li><a href="index.html#servicios">Shop</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="index.html">Facts</a></li>
-                        <li><a href="blog.html">Partner</a></li>
-                        <li><a href="index.html#contacto">Contact us</a></li>
-                    </ul>
-                </div>    
-            </nav>
-        
-        </header>
-        
-        <section class="section-about">
-            <div class="row">
-                <h2>Crafted 4 Wellness.</h2>
-                <p class="long-copy">
-                    We are a company dedicated to deliver top quality products to improve our customers 
-                    Life.  More info has to be added. Crafted 4 Wellness was founded in 2018 in Irvine California but then in March 2019 it was moved to Las Vegas, Nv
-                </p>
-            </div>
-            
-            <div class="row">
-                <div class="col span-1-of-2"> <!-- poner columnas -->
-                    <h3>Definition of</h3>
-                    <h4>CBD</h4>
-                </div>
-                <div class="col span-1-of-2 box">
-                    <p>
-                         CBD (cannabidiol) is a natural non- psychoactive component found in the hemp and cannabis plant. Our Full Spectrum CBD is legal and will not get you high. It is derived from American-grown hemp, which contains no THC.<br>
-                    </p>
-                </div>
-            </div> 
-        </section>
-             
-        <section class="section-canabis">
-            <div class="mary">
-                <p class="titulo">Cannabis as <br> Alternative Medicine</p>
-            </div>
-            
-            <div class="row">
-             <p>Cannabis has been used for millennia in cultures worldwide as a medicinal plant. Given the numerous references in ancient texts, at one-time cannabis was as conventional as Penicillin. It’s only relatively recently that Western medicine has eclipsed herbal treatments, cannabis among them, and consigned them to the alternative bucket, in the esteemed company of acupuncture and homeopathy.</p>
-             <img src="Resources/img/mari.png" alt="">
-            </div>
-        </section>
-        
-        <section class="section-facts">
-        <h2>Quick Figures & Facts</h2>
-            <img src="Resources/img/facts.png" alt="">
-            <img src="Resources/img/facts2.png" alt="">
-            <img src="Resources/img/facts3.png" alt="">
-        
-        </section>
-        
-        
-        <footer>
-        
-            <div class="row">
-                <div class="col span-1-of-2">
-                    <ul class="footer-nav">
-                        <li><a href="index.html">Homepage</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="index.html#servicios">Shop</a></li>
-                        <li><a href="index.html#contacto">Contact us</a></li>
-                    </ul>  
-                </div>
-                 <div class="col span-1-of-2">
-                     <h3>SOCIAL</h3>
-                     <ul class="social-links">
-                        <li><a href="https://www.facebook.com/"><i class="icon ion-logo-facebook"></i></a></li>
-                        <li><a href="https://www.instagram.com/"><i class="icon ion-logo-instagram"></i></a></li>
-                        <li><a href="index.html#contacto"><i class="icon ion-ios-mail"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="icon ion-ios-contacts"></i></a></li> 
-                     </ul>
+
+<!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v4.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your customer chat code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="103595797680800"
+  theme_color="#b9e7dd">
+      </div>
+
+      
+        <!-- navigation -->
+        <nav class="navbar no-margin-bottom alt-font">
+            <div class="container ">
+                <div class="row">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="col-lg-2 col-md-3 navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <!--<a class="navbar-brand inner-link" href="index.html"><img src="images/logo.png" alt=""/></a>-->
+                        <a class="navbar-brand inner-link" href="index.html"><img src="images/logo.gif" alt="" style="width: 200px !important;"></a>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-9 collapse navbar-collapse" id="bs-example-navbar-collapse-1 ">
+
+
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html#shop" class=""><strong>Shop</strong></a></li>
+                            <li><a href="#about" class="inner-link"><strong>About</strong></a></li>
+                            <li><a href="index.html#facts" class=""><strong>Facts</strong></a></li>
+                            <li><a href="index.html#partners" class=""><strong>Partners</strong></a></li>
+                        
+                            <li><a href="index.html#contact" class=""><strong>Contact us</strong></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-2 pull-right header-right text-right sm-display-none">
+                        <span class="text-uppercase bg-black-text text-small md-display-none"></span>
+                        <a class="btn-small-white btn btn-very-small no-margin inner-link" href="https://api.whatsapp.com/send?phone=5212224327063&text=Hello Crafted 4 Wellness, I want more information about your products">WhatsApp</a>
+                    </div>
                 </div>
             </div>
-            <div class="row">
+        </nav>
+        <!-- end navigation -->
+        <!-- slider -->
+        <section id="home" class="no-padding">
+            <div class="owl-slider-full owl-carousel owl-theme light-pagination square-pagination dark-pagination-without-next-prev-arrow main-slider">
+                <!-- slider item -->
+                <div class="item owl-bg-img" style="background-image:url('images/aboutcover.jpg');">
+                    <div class="opacity-light bg-dark-gray"></div>
+                    <div class="container full-screen position-relative">
+                        <div class="slider-typography text-left">
+                            <div class="slider-text-middle-main md-margin-eleven sm-margin-three xs-margin-thirteen">
+                                <div class="slider-text-middle slider-typography-option2">
+                                    <span class="white-text font-weight-800 letter-spacing-3 alt-font text-uppercase">
+
+                                    TOP QUALITY PRODUCTS</span><br>
+                                    <div class="bg-fast-yellow separator-line-extra-thick  no-margin-lr margin-twelve md-no-margin-lr md-margin-six"></div>
+                                    <p class="white-text text-uppercase letter-spacing-2 alt-font xs-width-80">
+                                        
+
+                                        <a href="#shop" class="highlight-button-dark btn btn-medium button inner-link xs-margin-eleven xs-no-margin-lr xs-no-margin-bottom">Shop</a>
+
+                                    <a href="#contact" class="highlight-button-dark btn btn-medium button inner-link xs-margin-eleven xs-no-margin-lr xs-no-margin-bottom">Contact us</a>
+
+                                    </p>
+
+
+                                    
+                    
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
                 
-                <img src="Resources/img/well.png" alt="Logo">
-                <p>
-                    Copyright &copy; 2019 by Crafted 4 Wellness. All rights reserved | 
-                    <a href="Aviso.html">Privacy Policy
-</a>
-                </p>
+                <!-- end slider item -->
             </div>
-            
-        </footer>
+        </section>
+        <!-- end slider -->
+
+ <!-- about section -->
+
+        <section id="about" class="wow bobody fadeIn">
+            <div class="container xs-text-center">
+                <!-- section title -->
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <h2 class="alt-font font-weight-600 title-thick-underline border-color-fast-yellow display-inline-block letter-spacing-2 margin-six no-margin-lr no-margin-top">About us</h2>
+                    </div>
+                </div>
+                <!-- end section title -->
+
+
+                <!-- text -->
+                <div class="row">
+                    <div class="col-md-8 col-sm-12">
+                        <span class="text-extra-large margin-six no-margin-lr no-margin-top display-inline-block alt-font black-text">
+
+                     
+
+Crafted 4 Wellness is a company dedicated to deliver top quality products to improve our customers life. C4W owns and operates premium sports nutrition, health and beauty products.  At the moment C4W will be launching a new image and start exploring the CBD industry.  More and new products will be released on the coming months.  Together, all these products will provide our customers around the world with a comprehensive line of powdered, bar, tablet, capsule and ready to drink products.
+
+
+
+                     
+
+                    </span>
+
+
+                    <span class="text-extra-large margin-six no-margin-lr no-margin-top display-inline-block alt-font black-text">
+
+
+
+Company Owned & Operated Manufacturing
+With state-of-the-art production facilities in Fort Collins, Colorado and our corporate offices in LAs Vegas, NV C4W is one of the few companies to manufacture in every product category. From the beginning in 2018, Crafted 4 Wellness has always taken a hands-on approach to maintaining the very highest standards of quality.
+
+
+
+                    </span>
+
+                    <span class="text-extra-large margin-six no-margin-lr no-margin-top display-inline-block alt-font black-text">
+
+                        <h4>Uncompromising Quality</h4>
+
+                        <br>
+
+Before a single machine is turned on in our manufacturing facilities,  C4W procurement professionals carefully select the most premium raw materials. A Certificate of Analysis is required for every ingredient, which is then tested and retested for compliance. Quality assurance performs daily inspections of our current Good Manufacturing Practices (cGMPs) compliant facilities.
+
+
+                    </span>
+
+                     <span class="text-extra-large margin-six no-margin-lr no-margin-top display-inline-block alt-font black-text">
+
+<h4>Customer Satisfaction </h4>
+
+<br>
+
+C4W  strict ingredients selection, quality control, lab testing and manufacturing processes are all done for one reason: to provide you with the highest quality products available. Our company was founded with a mission to bring consistent quality to the marketplace, and we are constantly working on setting even higher standards.
+
+
+                    </span>
+
+
+
+                    </div>
+                </div>
+                <!-- end text -->
+            </div>
+
+        </section>
+
         
+<!-- end about section -->
+
+
+       
+
+        
+<!-- about 2 section -->
+        <section id="facts" class="no-padding-top no-padding-bottom bobody wow fadeIn">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12 padding-nine bg-black agency-skill md-padding-fifteen sm-padding-nineteen">
+                        <span class="text-medium alt-font text-uppercase letter-spacing-2 white-text">CBD (cannabidiol) is a natural non- psychoactive component found in the hemp and cannabis plant. Our Full Spectrum CBD is legal and will not get you high. It is derived from American-grown hemp, which contains no THC.
+
+                        </span>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 agency-skill cover-background" style="background-image:url('images/bg1.png');"><div class="img-border border-color-white"></div></div>
+                    <div class="col-lg-5 col-md-12 col-sm-12 padding-nine bg-gray agency-skill md-padding-fifteen sm-padding-nineteen">
+                        <span class="text-medium font-weight-600 letter-spacing-2 text-uppercase black-text margin-six no-margin-lr no-margin-top display-block alt-font">Quick figures and facts</span>
+                        <div class="progress-bar-main progress-bar-style1">
+
+<!-- info products item -->
+                            <div class="progress-bar-sub">
+                                
+                                <p class="text-large alt-font">
+                                    
+The World Health Organization estimates that between 65 to 80 percent of the world’s population (over 4 billion people) rely on alternative medicine as their primary form of health care compared to only 10 to 30 percent of people who use conventional medicine.
+
+                                </p>
+
+                                <br>
+                                <br>
+                                
+                            </div>
+
+
+<!-- end info products item -->
+                            
+                            
+<!-- certification bar item -->
+                            <div class="">
+                                <a><img src="images/certification.png"></a>
+                            </div>
+<!-- end certification bar item -->
+                        </div>
+
+
+
+                    </div>
+
+                   
+                </div>
+            </div>
+        </section>
+<!-- end about 2 section -->
+
+
+
+<!-- footer -->
+        <footer class="wow fadeIn bg-white border-top">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <!-- footer logo -->
+                        <div class="col-md-12 col-sm-12 text-center">
+                            <div class="text-center"><a class="inner-link" href="#home"><img src="images/logo1x1.png" alt=""/></a></div>
+                            <span class="text-small alt-font text-uppercase margin-two margin-lr-auto display-block letter-spacing-1 black-text"> WHOLESALE CBD PRODUCTS & SERVICES</span>
+                        </div>
+                        <!-- end footer logo -->
+                        <!-- social media link -->
+                        <div class="col-md-12 col-sm-12 text-center margin-four no-margin-lr no-margin-bottom xs-margin-fifteen xs-no-margin-lr xs-no-margin-bottom">
+                            <div class="footer-social">
+
+
+                                <a href="https://www.facebook.com/crafted4wellness" target="_blank"><i class="fa fa-facebook"></i></a>
+
+                                <a href="https://www.instagram.com/crafted4wellness" target="_blank"><i class="fa fa-instagram"></i></a>
+
+                                <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        <!-- end social media link -->
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom bg-gray">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 text-center">
+                            <span class="text-small text-uppercase letter-spacing-1"> Copyright © 2019 by Crafted 4 Wellness. All rights reserved. <a href="terms.html" target="_blank">Visit our <strong>terms and conditions</strong></a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+        <!-- scroll to top -->
+        <a href="javascript:;" class="scrollToTop"><i class="fa fa-angle-up"></i></a>
+        <!-- end scroll to top -->
+        <!-- javascript libraries -->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/modernizr.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="js/skrollr.min.js"></script>
+        <script type="text/javascript" src="js/smooth-scroll.js"></script>
+        <script type="text/javascript" src="js/jquery.appear.js"></script>
+        <!-- menu navigation -->
+        <script type="text/javascript" src="js/jquery.nav.js"></script>
+        <!-- animation -->
+        <script type="text/javascript" src="js/wow.min.js"></script>
+        <!-- page scroll -->
+        <script type="text/javascript" src="js/page-scroll.js"></script>
+        <!-- owl carousel -->
+        <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+        <!-- counter -->
+        <script type="text/javascript" src="js/jquery.countTo.js"></script>
+        <!-- parallax -->
+        <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+        <!-- magnific popup -->
+        <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+        <!-- portfolio with shorting tab -->
+        <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+        <!-- images loaded -->
+        <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+        <!-- pull menu -->
+        <script type="text/javascript" src="js/classie.js"></script>
+        <!-- counter  -->
+        <script type="text/javascript" src="js/counter.js"></script>
+        <!-- fit video  -->
+        <script type="text/javascript" src="js/jquery.fitvids.js"></script>
+        <!-- setting -->
+        <script type="text/javascript" src="js/main.js"></script>
     </body>
-</html> 
+</html>
